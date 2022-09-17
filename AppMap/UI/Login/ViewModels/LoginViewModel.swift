@@ -20,54 +20,52 @@ final class LoginViewModel {
     }
     
     private func loadCredentials(){
-        if let user = LocalData.getEmail(){
-            if let data = KeyChain.standar.read(service: KeyChain.SERVICE, account: user) , let pass = String(data: data, encoding: .utf8){
-                viewDelegate?.setCredentials(user: user, password: pass)
-            }
+        if KeyChain.standar.read(service: KeyChain.SERVICE_TOKEN, account: KeyChain.ACCOUNT) != nil{
+            viewDelegate?.redirect()
         }
+    }
+    
+    private func loadHeroes(){
+        
     }
     
 }
 
 extension LoginViewModel: LoginViewModelProtocol {
+    
     func onViewsLoaded() {
         loadCredentials()
     }
     
-    
     func onLoginAction(user: String, password: String) {
         let loginString = String(format: "%@:%@", user, password)
         guard let loginData = loginString.data(using: .utf8) else {
-            viewDelegate?.showError(message: "Error Interno 1")
+            viewDelegate?.showError(message: "Error al crear credenciales")
             return
         }
                 
         let base64LoginString = loginData.base64EncodedString()
 
-        NetworkModel.shared.networkCall(
+        NetworkHelper.shared.networkCall(
             uri: ApiURL.LOGIN,
             method: "POST",
             authentication: "Basic",
             credentials: base64LoginString,
             jsonRequest: false,
             body: nil) { [weak self] data, error in
+                
                 if let error = error {
-                    if let user = LocalData.getEmail(){
-                        KeyChain.standar.delete(service: KeyChain.SERVICE, account: user)
-                        LocalData.deleteEmail()
-                    }
                     self?.viewDelegate?.showError(message: error.rawValue)
                 }
+                
                 guard let data = data, let token = String(data: data, encoding: .utf8) else {
-                    self?.viewDelegate?.showError(message: "Error interno 2")
+                    self?.viewDelegate?.showError(message: "Error en la respuesta del servidor")
                     return
                 }
                 
-                NetworkModel.shared.token = token
-                LocalData.save(email: user)
-                KeyChain.standar.save(data: password, service: KeyChain.SERVICE, account: user)
+                KeyChain.standar.save(data: token, service: KeyChain.SERVICE_TOKEN, account: KeyChain.ACCOUNT)
                 
-                self?.viewDelegate?.navigateToMap()
+                self?.viewDelegate?.navigateToHome()
                 
             }
     }

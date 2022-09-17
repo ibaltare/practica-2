@@ -8,8 +8,8 @@
 import UIKit
 
 protocol LoginViewProtocol: AnyObject {
-    func setCredentials(user: String, password: String)
-    func navigateToMap()
+    func navigateToHome()
+    func redirect()
     func showError(message: String)
 }
 
@@ -41,9 +41,11 @@ final class LoginViewController: UIViewController {
 }
 
 extension LoginViewController: LoginViewProtocol {
-    func setCredentials(user: String, password: String) {
-            userText.text = user
-            passwordText.text = password
+    
+    func redirect() {
+        let nextView = HomeViewController();
+        nextView.viewModel = HomeViewModel(viewDelegate: nextView)
+        navigationController?.setViewControllers([nextView], animated: true)
     }
     
     func showError(message: String) {
@@ -54,13 +56,14 @@ extension LoginViewController: LoginViewProtocol {
         }
     }
     
-    func navigateToMap() {
+    func navigateToHome() {
         DispatchQueue.main.sync {
             loginButton.isEnabled = true
             activityIndicator.stopAnimating()
-            let nextView = MapViewController();
-            nextView.viewModel = MapViewModel(viewDelegate: nextView)
-            navigationController?.setViewControllers([nextView], animated: true)
+            redirect()
+            //let nextView = HomeViewController();
+            //nextView.viewModel = HomeViewModel(viewDelegate: nextView)
+            //navigationController?.setViewControllers([nextView], animated: true)
         }
     }
     

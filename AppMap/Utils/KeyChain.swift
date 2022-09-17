@@ -10,7 +10,8 @@ import Foundation
 final class KeyChain {
 
     static let standar = KeyChain()
-    static let SERVICE = "keepcoding-app-map"
+    static let SERVICE_TOKEN = "app-map.token"
+    static let ACCOUNT = "app-map.account"
     private init() {}
 
     func save(data: String, service: String, account: String) {

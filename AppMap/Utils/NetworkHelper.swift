@@ -1,17 +1,8 @@
-//
-//  NetworkModel.swift
-//  AppMap
-//
-//  Created by Nicolas on 09/09/22.
-//
-
 import Foundation
 
-final class NetworkModel {
-      
-    var token: String?
+final class NetworkHelper {
     
-    static let shared = NetworkModel()
+    static let shared = NetworkHelper()
     
     private init() {}
     
@@ -59,3 +50,4 @@ final class NetworkModel {
     }
     
 }
+

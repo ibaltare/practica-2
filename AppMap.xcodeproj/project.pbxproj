@@ -20,7 +20,6 @@
 		371326AC28CBF696000370F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371326AA28CBF696000370F1 /* LoginViewController.swift */; };
 		371326AD28CBF696000370F1 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371326AB28CBF696000370F1 /* LoginViewController.xib */; };
 		371326C428CC45AA000370F1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371326C328CC45AA000370F1 /* LoginViewModel.swift */; };
-		371326C628CC4677000370F1 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371326C528CC4677000370F1 /* NetworkModel.swift */; };
 		371326C928CC47B9000370F1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371326C828CC47B9000370F1 /* Constants.swift */; };
 		371326CB28CC50C3000370F1 /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371326CA28CC50C3000370F1 /* HeroModel.swift */; };
 		371CCDBA28CECB0400011E49 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371CCDB828CECB0400011E49 /* MapViewController.swift */; };
@@ -29,8 +28,11 @@
 		371CCDBF28CECB3B00011E49 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371CCDBD28CECB3B00011E49 /* DetailViewController.xib */; };
 		371CCDC228CEE6A300011E49 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371CCDC128CEE6A300011E49 /* UIViewControllerExtension.swift */; };
 		371CCDC428CEF77A00011E49 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371CCDC328CEF77A00011E49 /* MapViewModel.swift */; };
-		37338F0028D00DD900620B79 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37338EFF28D00DD900620B79 /* LocalData.swift */; };
 		37338F0228D00EE200620B79 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37338F0128D00EE200620B79 /* KeyChain.swift */; };
+		37BAA1B628D54EF400CFD0C5 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BAA1B528D54EF400CFD0C5 /* NetworkHelper.swift */; };
+		37BAA1BD28D5532600CFD0C5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BAA1BB28D5532600CFD0C5 /* HomeViewController.swift */; };
+		37BAA1BE28D5532600CFD0C5 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37BAA1BC28D5532600CFD0C5 /* HomeViewController.xib */; };
+		37BAA1C028D5535000CFD0C5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BAA1BF28D5535000CFD0C5 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +70,6 @@
 		371326AA28CBF696000370F1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		371326AB28CBF696000370F1 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		371326C328CC45AA000370F1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		371326C528CC4677000370F1 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
 		371326C828CC47B9000370F1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		371326CA28CC50C3000370F1 /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
 		371CCDB828CECB0400011E49 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -77,8 +78,11 @@
 		371CCDBD28CECB3B00011E49 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		371CCDC128CEE6A300011E49 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		371CCDC328CEF77A00011E49 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
-		37338EFF28D00DD900620B79 /* LocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
 		37338F0128D00EE200620B79 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
+		37BAA1B528D54EF400CFD0C5 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		37BAA1BB28D5532600CFD0C5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		37BAA1BC28D5532600CFD0C5 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		37BAA1BF28D5535000CFD0C5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +184,7 @@
 				371CCDC028CEE66000011E49 /* Extension */,
 				371326B128CC0152000370F1 /* Init */,
 				371326B228CC0164000370F1 /* Login */,
+				37BAA1B728D5529F00CFD0C5 /* Home */,
 				371326B328CC016F000370F1 /* Map */,
 				371326B428CC0179000370F1 /* Detail */,
 			);
@@ -357,11 +362,44 @@
 		37338EFC28D0060A00620B79 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				371326C528CC4677000370F1 /* NetworkModel.swift */,
-				37338EFF28D00DD900620B79 /* LocalData.swift */,
 				37338F0128D00EE200620B79 /* KeyChain.swift */,
+				37BAA1B528D54EF400CFD0C5 /* NetworkHelper.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		37BAA1B728D5529F00CFD0C5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				37BAA1B828D552B700CFD0C5 /* ViewModels */,
+				37BAA1B928D552C500CFD0C5 /* Controllers */,
+				37BAA1BA28D552DD00CFD0C5 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		37BAA1B828D552B700CFD0C5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				37BAA1BF28D5535000CFD0C5 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		37BAA1B928D552C500CFD0C5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				37BAA1BB28D5532600CFD0C5 /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		37BAA1BA28D552DD00CFD0C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				37BAA1BC28D5532600CFD0C5 /* HomeViewController.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,6 +511,7 @@
 				3713268328CBF252000370F1 /* LaunchScreen.storyboard in Resources */,
 				3713268028CBF252000370F1 /* Assets.xcassets in Resources */,
 				371CCDBB28CECB0400011E49 /* MapViewController.xib in Resources */,
+				37BAA1BE28D5532600CFD0C5 /* HomeViewController.xib in Resources */,
 				371326A928CBF674000370F1 /* InitViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,18 +540,19 @@
 				371CCDBE28CECB3B00011E49 /* DetailViewController.swift in Sources */,
 				3713267428CBF24E000370F1 /* AppDelegate.swift in Sources */,
 				3713267E28CBF24E000370F1 /* AppMap.xcdatamodeld in Sources */,
+				37BAA1C028D5535000CFD0C5 /* HomeViewModel.swift in Sources */,
 				371326C428CC45AA000370F1 /* LoginViewModel.swift in Sources */,
 				371CCDC428CEF77A00011E49 /* MapViewModel.swift in Sources */,
+				37BAA1BD28D5532600CFD0C5 /* HomeViewController.swift in Sources */,
 				371CCDBA28CECB0400011E49 /* MapViewController.swift in Sources */,
 				371326A828CBF674000370F1 /* InitViewController.swift in Sources */,
+				37BAA1B628D54EF400CFD0C5 /* NetworkHelper.swift in Sources */,
 				37338F0228D00EE200620B79 /* KeyChain.swift in Sources */,
 				371326AC28CBF696000370F1 /* LoginViewController.swift in Sources */,
-				371326C628CC4677000370F1 /* NetworkModel.swift in Sources */,
 				371CCDC228CEE6A300011E49 /* UIViewControllerExtension.swift in Sources */,
 				3713267628CBF24E000370F1 /* SceneDelegate.swift in Sources */,
 				371326C928CC47B9000370F1 /* Constants.swift in Sources */,
 				371326CB28CC50C3000370F1 /* HeroModel.swift in Sources */,
-				37338F0028D00DD900620B79 /* LocalData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
