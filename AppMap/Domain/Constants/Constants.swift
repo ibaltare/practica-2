@@ -13,13 +13,6 @@ enum ApiURL {
     static let HEROS_LOCATIONS = "https://vapor2022.herokuapp.com/api/heros/locations"
 }
 
-/*enum NetworkError: Error {
-    case malformedURL(String)
-    case errorResponse(String)
-    case errorCode(Int?)
-    case notAuthenticated(String)
-}*/
-
 enum NetworkError: String {
     case malformedURL = "Error en URL"
     case errorResponse = "Error de conexión"

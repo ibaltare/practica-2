@@ -25,7 +25,7 @@ final class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        viewModel?.onViewsLoaded()
+        viewModel?.onViewLoaded()
     }
 
     @IBAction func loginAction(_ sender: Any) {
@@ -61,9 +61,6 @@ extension LoginViewController: LoginViewProtocol {
             loginButton.isEnabled = true
             activityIndicator.stopAnimating()
             redirect()
-            //let nextView = HomeViewController();
-            //nextView.viewModel = HomeViewModel(viewDelegate: nextView)
-            //navigationController?.setViewControllers([nextView], animated: true)
         }
     }
     

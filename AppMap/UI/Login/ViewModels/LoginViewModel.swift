@@ -8,7 +8,7 @@
 import Foundation
 
 protocol LoginViewModelProtocol {
-    func onViewsLoaded()
+    func onViewLoaded()
     func onLoginAction(user: String, password: String)
 }
 
@@ -25,15 +25,11 @@ final class LoginViewModel {
         }
     }
     
-    private func loadHeroes(){
-        
-    }
-    
 }
 
 extension LoginViewModel: LoginViewModelProtocol {
     
-    func onViewsLoaded() {
+    func onViewLoaded() {
         loadCredentials()
     }
     

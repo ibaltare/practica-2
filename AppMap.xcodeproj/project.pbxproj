@@ -28,6 +28,7 @@
 		371CCDBF28CECB3B00011E49 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371CCDBD28CECB3B00011E49 /* DetailViewController.xib */; };
 		371CCDC228CEE6A300011E49 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371CCDC128CEE6A300011E49 /* UIViewControllerExtension.swift */; };
 		371CCDC428CEF77A00011E49 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371CCDC328CEF77A00011E49 /* MapViewModel.swift */; };
+		3722130128D6AD2C007D3B75 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3722130028D6AD2C007D3B75 /* CoreDataHelper.swift */; };
 		37338F0228D00EE200620B79 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37338F0128D00EE200620B79 /* KeyChain.swift */; };
 		37BAA1B628D54EF400CFD0C5 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BAA1B528D54EF400CFD0C5 /* NetworkHelper.swift */; };
 		37BAA1BD28D5532600CFD0C5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BAA1BB28D5532600CFD0C5 /* HomeViewController.swift */; };
@@ -78,6 +79,7 @@
 		371CCDBD28CECB3B00011E49 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		371CCDC128CEE6A300011E49 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		371CCDC328CEF77A00011E49 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		3722130028D6AD2C007D3B75 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		37338F0128D00EE200620B79 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		37BAA1B528D54EF400CFD0C5 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		37BAA1BB28D5532600CFD0C5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -364,6 +366,7 @@
 			children = (
 				37338F0128D00EE200620B79 /* KeyChain.swift */,
 				37BAA1B528D54EF400CFD0C5 /* NetworkHelper.swift */,
+				3722130028D6AD2C007D3B75 /* CoreDataHelper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -541,6 +544,7 @@
 				3713267428CBF24E000370F1 /* AppDelegate.swift in Sources */,
 				3713267E28CBF24E000370F1 /* AppMap.xcdatamodeld in Sources */,
 				37BAA1C028D5535000CFD0C5 /* HomeViewModel.swift in Sources */,
+				3722130128D6AD2C007D3B75 /* CoreDataHelper.swift in Sources */,
 				371326C428CC45AA000370F1 /* LoginViewModel.swift in Sources */,
 				371CCDC428CEF77A00011E49 /* MapViewModel.swift in Sources */,
 				37BAA1BD28D5532600CFD0C5 /* HomeViewController.swift in Sources */,

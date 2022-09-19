@@ -9,6 +9,7 @@ import UIKit
 
 protocol HomeViewProtocol: AnyObject {
     func navigateToLogin()
+    func showMessage(_ message: String)
 }
 
 final class HomeViewController: UIViewController {
@@ -17,23 +18,28 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         title = "Heroes"
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Salir",
                                                                  style: .done,
                                                                  target: self,
                                                                  action: #selector(signOut))
+        
+        viewModel?.onViewLoaded()
     }
 
-
     @objc func signOut(){
-        viewModel?.onSignOnAction()
+        viewModel?.onSignOutAction()
     }
 
 }
 
 extension HomeViewController: HomeViewProtocol {
+    func showMessage(_ message: String) {
+        DispatchQueue.main.sync {
+            showAlert(title: "", message: message)
+        }
+    }
     
     func navigateToLogin() {
         let nextView = LoginViewController();

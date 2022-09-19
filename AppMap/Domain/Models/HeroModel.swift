@@ -1,5 +1,5 @@
 
-import Foundation
+import UIKit
 
 struct Hero: Decodable {
     let id: String
@@ -9,7 +9,7 @@ struct Hero: Decodable {
     let favorite: Bool?
 }
 
-struct HeroeLocation: Decodable {
+struct HeroLocation: Decodable {
     let id: String
     let latitud: Double
     let longitud: Double
